@@ -1,3 +1,4 @@
+
 console.log("Archivo correcto ;)");
 
 const express = require('express');
@@ -22,7 +23,7 @@ app.post('/peliculas', (req, res) => {
 app.put('/peliculas/:id', (req, res) => {
     const id = req.params.id;
     const peliculaActualizacion = req.body;
-    res.json({ message: `Película con ID ${id} actualizada`, peliculaActualizada });
+    res.json({ message: `Película con ID ${id} actualizada`, peliculaActualizacion });
 });
 
 app.delete('/peliculas/:id', (req, res) => {
@@ -32,5 +33,5 @@ app.delete('/peliculas/:id', (req, res) => {
 
 // Servidor
 app.listen(port, () => {
-    console.log(`Servidor en puerto: ${port}`);
-});
+    console.log(`Servidor en puerto: ${port}`)
+    });
