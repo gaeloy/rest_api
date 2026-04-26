@@ -7,7 +7,7 @@ const port = process.env.port || 3000;
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
+app.get('/peliculas', (req, res) => {
     res.json({ message: 'Lista de películas' });
 });
 
